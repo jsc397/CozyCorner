@@ -1,0 +1,24 @@
+<!-- ask why bouquets.name does not work. why must I use a for loop here? -->
+<nav>nav bar</nav>
+<h2>Bouquets</h2>
+{% for bouquet in bouquets %}
+<div>
+    <h3>{{bouquet.name}}</h3>
+    <ul>
+        <li>
+            <img src="{{ bouquet.img_url }}" alt="bouquet_image" />
+        </li>
+        <li>
+            {{ bouquet.season }}
+        </li>
+        <li>
+            {{ bouquet.flowers }}
+        </li>
+        <li>
+            {{ bouquet.description }}
+        </li>
+
+    </ul>
+</div>
+
+{% endfor %}

@@ -25,7 +25,7 @@ SECRET_KEY = 'bfwnwkh)0*widhtbc%g9mme88$799&4j66x^&a9o3(cfm0)d&9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ALLOWED_HOSTS = [‘0.0.0.0’, ‘localhost’, https://calm-gorge-13996.herokuapp.com/ ]
+ALLOWED_HOSTS = ALLOWED_HOSTS = ['localhost','calm-gorge-13996.herokuapp.com', ]
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
@@ -123,5 +123,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, ‘staticfiles’)
+

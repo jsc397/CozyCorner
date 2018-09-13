@@ -1,1 +1,1 @@
-web: gunicorn cozycorner.wsgi —-log-file -
+web: gunicorn cozycorner_django.wsgi —-log-file -

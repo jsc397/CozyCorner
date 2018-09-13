@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Bouquet, Favorite
+from .models import Bouquet
 # Register your models here.
 admin.site.register(Bouquet)
-admin.site.register(Favorite)
+# admin.site.register(Favorite)

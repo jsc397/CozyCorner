@@ -1,6 +1,6 @@
+{% extends 'base.html' %}
 <!-- ask why bouquets.name does not work. why must I use a for loop here? -->
-<nav>nav bar</nav>
-<h2>Bouquets</h2>
+{% block content %}
 {% for bouquet in bouquets %}
 <div>
     <h3>{{bouquet.name}}</h3>
@@ -22,3 +22,4 @@
 </div>
 
 {% endfor %}
+{% endblock %}

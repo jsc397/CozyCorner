@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cozy Corner</title>
+</head>
+
+<body>
+    <h1>Welcome to Cozy Corner</h1>
+    <nav>
+        <!-- link to Signup -->
+        <a href="">Signup</a>
+        <!-- link to Login -->
+        <a href="">Login</a>
+        <div class="user-info">
+            {% if user.is_authenticated %}
+            Welcome, {{ user.username }}
+            {% else %}
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'signup' %}">Sign Up</a>
+            {% endif %}
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

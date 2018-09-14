@@ -1,24 +1,17 @@
 {% extends 'base.html' %}
-<!-- ask why bouquets.name does not work. why must I use a for loop here? -->
+
 {% block content %}
 {% for bouquet in bouquets %}
-<div>
-    <h3>{{bouquet.name}}</h3>
-    <ul>
-        <li>
-            <img src="{{ bouquet.img_url }}" alt="bouquet_image" />
-        </li>
-        <li>
-            {{ bouquet.season }}
-        </li>
-        <li>
-            {{ bouquet.flowers }}
-        </li>
-        <li>
-            {{ bouquet.description }}
-        </li>
 
-    </ul>
+<div class="card mb-3">
+    <img class="card-img-top" src="{{ bouquet.img_url }}" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">{{bouquet.name}}</h5>
+        <p class="card-text">{{ bouquet.flowers }}</p>
+        <p class="card-text">{{ bouquet.season }}.</p>
+        <p class="card-text">{{ bouquet.description }}</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
 </div>
 
 {% endfor %}

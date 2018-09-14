@@ -1,10 +1,10 @@
 from django.db import models
-# from django.contrib.auth.models import User
+from django.contrib.auth.models import User
 
 # Create your models here.
 
 class Bouquet(models.Model):
-    # user = models.ForeignKey('auth.User', related_name = 'favorites', on_delete=models.CASCADE, default="user")
+    user = models.ForeignKey('auth.User', related_name = 'bouquet', on_delete=models.CASCADE, default="user")
     name = models.CharField(max_length=200)
     img_url = models.CharField(max_length=200)
     cost = models.CharField(max_length=100)

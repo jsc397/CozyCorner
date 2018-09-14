@@ -19,7 +19,7 @@
     <nav class='main-nav'>
         <div class="user-info">
             {% if user.is_authenticated %}
-            <span classs="welcome">Welcome, {{ user.username }}</span>
+            <span>Welcome, {{ user.username }}</span>
             <br><a href="{% url 'logout' %}" class="logout"> <button class="btn btn-outline-success">Log Out</button></a>
             {% else %}
             <a href="{% url 'login' %}"><button type='button' class="btn btn-outline-success btn-small">Log In</button>

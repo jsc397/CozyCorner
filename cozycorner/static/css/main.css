@@ -42,15 +42,14 @@ h3 {
   color: #a0a696;
 }
 
-.signup-form {
-  /* margin: auto; */
-  /* width: 50%; */
-}
-
 /* login */
 .login-page {
   margin-left: 15px;
-  background-image: url("https://www.pexels.com/photo/arrangement-bouquet-bouquet-of-flowers-bright-514162/");
+}
 
-  /* width: 50%; */
+/* logout */
+span {
+  font-size: 1.2rem;
+  color: #a0a696;
+  font-size: 2rem;
 }

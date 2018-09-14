@@ -1,6 +1,10 @@
 body {
-  font-family: "Helvetica Neue", sans-serif;
+  /* font-family: "Helvetica Neue", sans-serif; */
   max-width: 50em;
   margin: auto;
   padding: 2em 1em;
+}
+
+h1 {
+  font-family: "Didact Gothic";
 }

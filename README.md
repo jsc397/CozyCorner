@@ -42,6 +42,16 @@ and enjoy the magic at localhost:8000
 
 # Goals
 
+### Primary Goal
+
 Through out the course, I was never able to successfully incorporate user authentication and authorization.
 
 For this project, I would like to get use authentication and authorization up and running.
+
+### Secondary Goal
+
+Once authorized, I would like the User to be able to either:
+
+1. Click the existing bouquet to add to his/her user page
+2. Create his/her own custom bouquet and add to his/her user page
+3. Send us an email with the form information

@@ -12,13 +12,10 @@
 <body>
     <h1>Welcome to Cozy Corner</h1>
     <nav>
-        <!-- link to Signup -->
-        <a href="">Signup</a>
-        <!-- link to Login -->
-        <a href="">Login</a>
         <div class="user-info">
             {% if user.is_authenticated %}
             Welcome, {{ user.username }}
+            <a href="{% url 'logout' %}">logout</a>
             {% else %}
             <a href="{% url 'login' %}">Login</a>
             <a href="{% url 'signup' %}">Sign Up</a>

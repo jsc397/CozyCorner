@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% if user.is_authenticated %}
 {% for bouquet in bouquets %}
 
 <div class="card mb-3">
@@ -15,4 +16,23 @@
 </div>
 
 {% endfor %}
+{% else %}
+<div class="alt-home">
+    <div class="card bg-dark text-white">
+        <img class="card-img" src="https://images.pexels.com/photos/1070863/pexels-photo-1070863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="homepage">
+        <div class="card-img-overlay">
+            <div class="homepage-text">
+                <h5 class="card-title">About Us</h5>
+                <p class="card-text">Cozy Corner is a small mom&pop flower shop located in Ashburn,Va</p>
+                <p class="card-text">Opened in 2008, we've been catering special occasions since!</p>
+                <p class="card-text">No wedding is too small and we try our best to work with all budgets</p>
+                <p class="card-text">Cozy corner gives you the 'big company' quality with the individualized personal
+                    detail </p>
+                <p class="card-text">Contact us today for a consultation </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif%}
 {% endblock %}

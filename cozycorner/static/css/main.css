@@ -1,10 +1,56 @@
-body {
-  /* font-family: "Helvetica Neue", sans-serif; */
-  max-width: 50em;
-  margin: auto;
-  padding: 2em 1em;
+h1 {
+  font-family: "Cinzel";
+  padding: 0.5em;
+  font-size: 3.8rem;
+  color: #7d8072;
 }
 
-h1 {
+h2 {
+  font-size: 1.8rem;
+  color: #7d8072;
+}
+
+h3 {
+  font-size: 1.8rem;
+  text-decoration-line: underline;
+  color: #7d8072;
+}
+/* base nav bar */
+
+.main-nav {
+  padding-left: 0.5em;
+}
+.login,
+.signup,
+.logout {
+  font-family: "Alegreya Sans SC";
+  font-size: 1.3rem;
+}
+.card-text,
+.card-title {
   font-family: "Didact Gothic";
+}
+
+.card-text {
+  font-size: 1.2rem;
+  color: #a0a696;
+}
+/* signup */
+.signup-page {
+  padding: 1em 2em;
+  margin: auto;
+  color: #a0a696;
+}
+
+.signup-form {
+  /* margin: auto; */
+  /* width: 50%; */
+}
+
+/* login */
+.login-page {
+  margin-left: 15px;
+  background-image: url("https://www.pexels.com/photo/arrangement-bouquet-bouquet-of-flowers-bright-514162/");
+
+  /* width: 50%; */
 }

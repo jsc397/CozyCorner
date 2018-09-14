@@ -1,6 +1,13 @@
-<h2>Sign up</h2>
-<form method="POST">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
-</form>
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="signup-page">
+    <h2>Sign up</h2>
+    <form method="POST" class="signup-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-outline-success" type="submit">Sign Up</button>
+    </form>
+</div>
+
+{% endblock %}

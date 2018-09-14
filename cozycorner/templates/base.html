@@ -10,20 +10,25 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Architects+Daughter|Cinzel|Cormorant+Garamond|Didact+Gothic|Julius+Sans+One|Marcellus|Montserrat+Alternates|Poiret+One|Roboto|Unica+One"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <title>Cozy Corner</title>
 </head>
 
 <body>
     <h1>Welcome to Cozy Corner</h1>
-    <nav>
+    <nav class='main-nav'>
         <div class="user-info">
             {% if user.is_authenticated %}
-            Welcome, {{ user.username }}
-            <br><a href="{% url 'logout' %}">logout</a>
+            <span classs="welcome">Welcome, {{ user.username }}</span>
+            <br><a href="{% url 'logout' %}" class="logout"> <button class="btn btn-outline-success">Log Out</button></a>
             {% else %}
-            <a href="{% url 'login' %}">Login</a>
-            <a href="{% url 'signup' %}">Sign Up</a>
+            <a href="{% url 'login' %}"><button type='button' class="btn btn-outline-success btn-small">Log In</button>
+            </a>
+            <a href="{% url 'signup' %}"><button type='button' class="btn btn-outline-success btn-small">Sign Up</button>
+            </a>
+            <a href="{% url 'bouquet_list' %}"><button type='button' class="btn btn-outline-success btn-small">Home</button>
+            </a>
+            <!-- <a href="{% url 'signup' %}" class="signup">Sign Up</a> -->
             {% endif %}
         </div>
     </nav>
